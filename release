@@ -1,11 +1,11 @@
 
 
 if SERVER then return; end
-chat.AddText( Color( 0, 255, 0, 255 ), "[MEMEWare Reborn]", Color( 255, 255, 0, 255 ), "Welcome",Color( math.random(0, 255), math.random(0, 255), math.random(0, 255), 255 ), " ",LocalPlayer():Name()  )
-chat.AddText( Color( 0, 255, 0, 255 ), "[MEMEWare Reborn]", Color( 255, 255, 0, 255 ), "Change logs can be find at : https://github.com/demonicPbunny/MEMEWare Reborn/commits/master")
-chat.AddText( Color( 0, 255, 0, 255 ), "[MEMEWare Reborn]", Color( 255, 255, 255, 255 ), "Current Build: May 5, 2021, 15:20 GMT+1")
-chat.AddText( Color( 0, 255, 0, 255 ), "[MEMEWare Reborn]", Color( 255, 255, 255, 255 ), "Latest Update: [ESP] Fixed Glow")
-chat.AddText( Color( 0, 255, 0, 255 ), "[MEMEWare Reborn]", Color( 255, 255, 255, 255 ), "Go to steamapps/common/GarrysMod/garrysmod/data And Remove MEMEWare Reborn.txt otherwise you cant use this after an update!!!!")
+chat.AddText( Color( 0, 255, 0, 255 ), "[PenisWare]", Color( 255, 255, 0, 255 ), "Welcome",Color( math.random(0, 255), math.random(0, 255), math.random(0, 255), 255 ), " ",LocalPlayer():Name()  )
+chat.AddText( Color( 0, 255, 0, 255 ), "[PenisWare]", Color( 255, 255, 0, 255 ), "Change logs can be find at : https://github.com/demonicPbunny/PenisWare/commits/master")
+chat.AddText( Color( 0, 255, 0, 255 ), "[PenisWare]", Color( 255, 255, 255, 255 ), "Current Build: May 5, 2021, 15:20 GMT+1")
+chat.AddText( Color( 0, 255, 0, 255 ), "[PenisWare]", Color( 255, 255, 255, 255 ), "Latest Update: [ESP] Fixed Glow")
+chat.AddText( Color( 0, 255, 0, 255 ), "[PenisWare]", Color( 255, 255, 255, 255 ), "Go to steamapps/common/GarrysMod/garrysmod/data And Remove PenisWare.txt otherwise you cant use this after an update!!!!")
 
 local type = type;
 local next = next;
@@ -61,7 +61,7 @@ surface.CreateFont( "BunnywareMenu", {
 	outline = false,
 } )
 
-surface.CreateFont( "MEMEWare Reborn", {
+surface.CreateFont( "PenisWare", {
 	font = "Corbel",
 	extended = true,
 	size = 15,
@@ -401,7 +401,7 @@ local options = {
 	},
 	["Info"] = {
 		{
-			{"MEMEWare Reborn Info Box", 20, 20, 350, 240, 100},
+			{"PenisWare Info Box", 20, 20, 350, 240, 100},
            
 			{"My Steam ->", "Checkbox", false, 0, 54},
 			
@@ -486,7 +486,7 @@ local function gInt(men, sub, lookup)
 end
 
 local function saveconfig()
-	file.Write("MEMEWare Reborn.txt", util.TableToJSON(options));
+	file.Write("PenisWare.txt", util.TableToJSON(options));
 end
 
 local mousedown;
@@ -523,13 +523,13 @@ local function DrawBackground(w, h)
 	
 	surface.SetFont("BunnywareMenu");
 	
-	local tw, th = surface.GetTextSize("MEMEWare Reborn for Garry's Mod");
+	local tw, th = surface.GetTextSize("PenisWare for Garry's Mod");
 	
 	surface.SetTextPos(5, 15 - th / 2);
 	
 	surface.SetTextColor(255, 255, 255);
 	
-	surface.DrawText("MEMEWare Reborn for Garry's Mod!");
+	surface.DrawText("PenisWare for Garry's Mod!");
 	draw.RoundedBox(20, 0, 31, 5, h - 31, curcol ) -- surface.DrawRect(0, 31, 5, h - 31);
 	draw.RoundedBox(20, 0, h - 5, w, h, curcol ) -- surface.DrawRect(0, h - 5, w, h);
 	draw.RoundedBox(20, w - 5, 31, 5, h, curcol ) --surface.DrawRect(w - 5, 31, 5, h);
@@ -1918,14 +1918,14 @@ end
 end
 local function spamfast()
 if(gOption("Misc", "Misc", "Chat Spam") == "Fast") then	
-RunConsoleCommand("say", "MEMEWare Reborn | For All Your Cheat Needs")
+RunConsoleCommand("say", "PenisWare | For All Your Cheat Needs")
 end
 end	
 timer.Create("Spamminsfast", 0.1,0,spamfast)
 
 local function spamslow()
 if(gOption("Misc", "Misc", "Chat Spam") == "Slow") then	
-RunConsoleCommand("say", "MEMEWare Reborn | For All Your Cheat Needs")
+RunConsoleCommand("say", "PenisWare | For All Your Cheat Needs")
 end
 end	
 timer.Create("SpamminsSlow", 1.3,0,spamslow)
@@ -2305,7 +2305,7 @@ gameevent.Listen( "entity_killed" )
 hook.Add("entity_killed","Killmsg", function()
 if (gOption("Misc", "Other", "Kill Message")) then
 	messagetable = { 
-	"Get raped by MEMEWare Reborn",
+	"Get raped by PenisWare",
 	"Rage quit already",
 	"What are you doing???",
 	"Rekt",
@@ -2374,7 +2374,7 @@ hook.Add("HUDPaint", "gunlabname", function()
 			local diff2 = math.abs(y2 - y1);
 
            surface.SetTextPos(x1,y1-25)
-	    surface.SetFont("MEMEWare Reborn");
+	    surface.SetFont("PenisWare");
 
 		surface.DrawText("[ "..language.GetPhrase(v:GetClass()).." ]");
 		
@@ -2437,7 +2437,7 @@ hook.Add("HUDPaint", "moneyprintername", function()
 			local diff2 = math.abs(y2 - y1);
 
            surface.SetTextPos(x1,y1-25)
-	    surface.SetFont("MEMEWare Reborn");
+	    surface.SetFont("PenisWare");
 
 		surface.DrawText("[ "..language.GetPhrase(v:GetClass()).." ]");
 end		
@@ -2493,7 +2493,7 @@ hook.Add("HUDPaint", "darkrpspawnedname", function()
 			local diff2 = math.abs(y2 - y1);
 
            surface.SetTextPos(x1,y1-25)
-		surface.SetFont("MEMEWare Reborn");
+		surface.SetFont("PenisWare");
 		surface.DrawText("[ "..language.GetPhrase(v:GetClass()).." ]");
 end
 end
@@ -2552,10 +2552,10 @@ hook.Add("HUDPaint", "weaponname", function()
 			local diff2 = math.abs(y2 - y1);
 
            surface.SetTextPos(x1,y1+25)
-		surface.SetFont("MEMEWare Reborn");
+		surface.SetFont("PenisWare");
 		surface.DrawText("[ "..language.GetPhrase(v:GetClass()).." ]");
 		surface.SetTextPos(x1,y1+45)
-		surface.SetFont("MEMEWare Reborn");
+		surface.SetFont("PenisWare");
 		surface.DrawText("("..v:Clip1().." / "..v:GetMaxClip1()..")");
 	end
 end
@@ -2572,7 +2572,7 @@ hook.Add("HUDPaint", "itemname", function()
 			local diff2 = math.abs(y2 - y1);
 
            surface.SetTextPos(x1,y1-25)
-		surface.SetFont("MEMEWare Reborn");
+		surface.SetFont("PenisWare");
 		surface.DrawText("[ "..language.GetPhrase(v:GetClass()).." ]");
 end
 end
@@ -2731,7 +2731,7 @@ hook.Add("HUDPaint", "plyhealthnum", function()
 		local hp = v:Health() * h / 100;
 		if(hp > h) then hp = h; end
 		local diff = h - hp;
-		surface.SetFont("MEMEWare Reborn")
+		surface.SetFont("PenisWare")
 		surface.SetTextColor( 255, 255, 255, 255 )
 		surface.SetTextPos( enemyPos.x - w / 1 - 25, enemyPos.y - h - 1, 3, h + 2 )
 		surface.DrawText(v:Health().." HP")
@@ -2754,7 +2754,7 @@ hook.Add("HUDPaint", "plyname", function()
 			local diff2 = math.abs(y2 - y1);
 		surface.SetTextColor( 255, 255, 255, 255 )
 		local tw, th = surface.GetTextSize(v:Name());
-		surface.SetFont("MEMEWare Reborn");
+		surface.SetFont("PenisWare");
 		
 		 surface.SetTextPos(x1,y1 - 25)
 		surface.DrawText(v:Name());
@@ -2804,7 +2804,7 @@ hook.Add("HUDPaint", "plyweapon", function()
 		surface.SetDrawColor(255,255,255,255)
          surface.SetTextPos(x1,y2)
 		
-		surface.SetFont("MEMEWare Reborn");
+		surface.SetFont("PenisWare");
         if(gOption("Visuals", "ESP", "Weapon") == "On") then
         surface.DrawText("[ "..language.GetPhrase(v:GetActiveWeapon():GetClass()).." ]");
    end
@@ -2944,7 +2944,7 @@ hook.Add("HUDPaint", "npchealthnum", function()
 		local hp = v:Health() * h / 100;
 		if(hp > h) then hp = h; end
 		local diff = h - hp;
-		surface.SetFont("MEMEWare Reborn");
+		surface.SetFont("PenisWare");
 		surface.SetTextColor( 255, 255, 255, 255 )
 		surface.SetTextPos( enemyPos.x - w / 1 - 5, enemyPos.y - h - 1, 3, h + 2 )
 		surface.DrawText(v:Health().." HP")
@@ -2982,7 +2982,7 @@ hook.Add("HUDPaint", "npcweapon", function()
 			local diff2 = math.abs(y2 - y1);
            surface.SetDrawColor(255,255,255,255)
            surface.SetTextPos(x1,y2)
-		surface.SetFont("MEMEWare Reborn");
+		surface.SetFont("PenisWare");
 		surface.DrawText("[ "..language.GetPhrase(v:GetActiveWeapon():GetClass(w)).." ]");
 end
 end
@@ -3961,7 +3961,7 @@ hook.Add("HUDPaint", "LocalHealthNum", function()
 		local hp = v:Health() * h / 100;
 		if(hp > h) then hp = h; end
 		local diff = h - hp;
-		surface.SetFont("MEMEWare Reborn");
+		surface.SetFont("PenisWare");
 		surface.SetTextColor( 255, 255, 255, 255 )
 		surface.SetTextPos( enemyPos.x - w / 1 - 5, enemyPos.y - h - 1, 3, h + 2 )
 		surface.DrawText(v:Health().." HP")
@@ -3999,7 +3999,7 @@ hook.Add("HUDPaint", "Localweapon", function()
 			local diff2 = math.abs(y2 - y1);
            surface.SetDrawColor(255,255,255,255)
            surface.SetTextPos(x1,y2)
-		surface.SetFont("MEMEWare Reborn");
+		surface.SetFont("PenisWare");
 		surface.DrawText("[ "..language.GetPhrase(v:GetActiveWeapon():GetClass(w)).." ]");
 
 end
@@ -4065,7 +4065,7 @@ html:Dock( FILL )
 html:OpenURL( "https://steamcommunity.com/id/atomicburen" )
 
 	frame.Think = function()
-		if (!gBool("Info", "MEMEWare Reborn Info Box", "My Steam ->")) then 
+		if (!gBool("Info", "PenisWare Info Box", "My Steam ->")) then 
 
 			frame:Remove();
 			htmlopen = false;
@@ -4076,15 +4076,15 @@ end
 end
 
 local function htmlpagebrain()
-	if (gBool("Info", "MEMEWare Reborn Info Box", "My Steam ->") && !htmlopen && !f) then 
+	if (gBool("Info", "PenisWare Info Box", "My Steam ->") && !htmlopen && !f) then 
 	
 		htmlopen = true;
 		f = true;
 		htmlpage();
-	elseif (!gBool("Info", "MEMEWare Reborn Info Box", "My Steam ->") && !htmlopen) then
+	elseif (!gBool("Info", "PenisWare Info Box", "My Steam ->") && !htmlopen) then
 		f = false;
 	end
-	if (gBool("Info", "MEMEWare Reborn Info Box", "My Steam ->") && f && htmlopen) then
+	if (gBool("Info", "PenisWare Info Box", "My Steam ->") && f && htmlopen) then
 		f2 = true;
 	else
 		f3 = false;
@@ -4872,11 +4872,11 @@ surface.SetTextColor(0,255,0)
 surface.SetDrawColor(65,65,65,155)
 surface.DrawRect(ScrW()/75,ScrH()/3,400,125)
 if LocalPlayer():GetEyeTrace().Entity:IsNPC() == true then 
-	surface.SetFont("MEMEWare Reborn")
+	surface.SetFont("PenisWare")
 	surface.SetTextPos(ScrW()/75,ScrH()/3 + 5)
 surface.DrawText(" NPC INFO: ".."Name: "..language.GetPhrase(HitName).." |Health: "..HitHP)
 surface.SetTextPos(ScrW()/75,ScrH()/3 + 25)
-surface.SetFont("MEMEWare Reborn")
+surface.SetFont("PenisWare")
 
 if LocalPlayer():GetEyeTrace().Entity:GetActiveWeapon():GetClass() == NULL then
 	
@@ -4889,7 +4889,7 @@ end
 if LocalPlayer():GetEyeTrace().Entity:IsPlayer() == true then 
 local HitHP = LocalPlayer():GetEyeTrace().Entity:Health()
 local HitName = LocalPlayer():GetEyeTrace().Entity:Name()
-surface.SetFont("MEMEWare Reborn")
+surface.SetFont("PenisWare")
 surface.SetDrawColor(65,65,65,155)
 surface.SetTextPos(ScrW()/75,ScrH()/3 + 5)
 surface.DrawText(" Player info: ".."Name: "..HitName.." |Health: "..HitHP)
@@ -4898,10 +4898,10 @@ local Hitadmin = LocalPlayer():GetEyeTrace().Entity:IsAdmin()
 local Hitadmin2 = LocalPlayer():GetEyeTrace().Entity:IsSuperAdmin()	
 
 if Hitadmin == true or Hitadmin2 == true then
-	surface.SetFont("MEMEWare Reborn")
+	surface.SetFont("PenisWare")
 surface.DrawText(" Admin: Yes")
 else 
-	surface.SetFont("MEMEWare Reborn")
+	surface.SetFont("PenisWare")
 surface.DrawText(" Admin: No")
 
 end
@@ -4909,10 +4909,10 @@ surface.SetTextPos(ScrW()/75,ScrH()/3 + 45)
 local HitWeapon = LocalPlayer():GetEyeTrace().Entity:GetActiveWeapon():GetClass()
 
 if Hitweapon == NULL then
-	surface.SetFont("MEMEWare Reborn")
+	surface.SetFont("PenisWare")
 surface.DrawText(" Weapon: Unkown")
 else 
-	surface.SetFont("MEMEWare Reborn")
+	surface.SetFont("PenisWare")
 surface.DrawText(" Weapon: "..language.GetPhrase(HitWeapon))
 end	
 end
@@ -5010,6 +5010,7 @@ end
 concommand.Add( "sw_toggle", SW.Toggle )
  // credit to RabidToaster for client sided noclip
 concommand.Add( "sw_pos", function() print( SW.ViewOrigin ) end )
+
 
 
 
